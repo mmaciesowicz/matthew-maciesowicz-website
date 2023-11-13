@@ -1,0 +1,166 @@
+$cmdBlack: #0c0c0c;
+$cmdGray:  #7b7b7b;
+$cmdNavBarWidth: 1061.5px;
+$cmdNavBarHeight: 54.48px;
+$cmdLogoDim: 33px;
+$hoverWhite: #e5e5e5;
+
+body {
+    background-color: $hoverWhite;
+    // background-color: $cmdBlack;
+    background-repeat:initial;
+    // background-blend-mode: multiply;
+    background-image: url(images/paintbrushBackground.png);
+    margin: 0;
+    overflow: hidden;
+}
+
+.cmdWindow {
+    justify-content: center;
+    // background-color: $cmdBlack;
+    width: 1061.5px;
+    height: 845.68px;
+    border-style: solid;
+    border-color: $cmdGray;
+    border-width: 0.5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    .cmdNavbar {
+        width: $cmdNavBarWidth;
+        height: $cmdNavBarHeight;
+        background-color: #ffffff;
+        position: relative;
+
+
+        #cmdLogo {
+            width: $cmdLogoDim;
+            height: $cmdLogoDim;
+            position: absolute;
+            top: 50%;
+            left: 0.8%;
+            margin-top: -($cmdLogoDim / 2);
+        }
+
+        .cmdTitle {
+            font-size: 14px;
+            font-family: "Segoe UI";
+            color: #000;
+            line-height: 1.2;
+            text-align: left;
+            -moz-transform: matrix( 1.72580015133497,0,0,1.72580015133496,0,0);
+            -webkit-transform: matrix( 1.72580015133497,0,0,1.72580015133496,0,0);
+            -ms-transform: matrix( 1.72580015133497,0,0,1.72580015133496,0,0);
+        }
+
+        .cmdTitleAlign {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 10.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cmdWindowIconContainer {
+            position: relative;
+            float: right;
+            height: 100%;
+            aspect-ratio: 1/1;
+            text-align: center;
+            
+        }
+
+        .cmdWindowIconContainer:hover {
+            background-color: $hoverWhite;
+        }
+
+        .cmdWindowIcons {
+            width: 30%;
+            margin: auto;
+            position: relative;
+            top: 35%;
+        }
+
+    }
+    
+
+    .cmdTypeScreen {
+        background-color: $cmdBlack;
+        width:100%;
+        height:100%;
+        display: flex;
+		flex-direction: column;
+        flex: 1;
+
+        p {
+            margin: -10px 0 -10px 0;
+        }
+
+        .cmdText {
+            margin-top: 1%;
+            color: #ffffff;
+            font-size: 20px;
+            font-family: "Consolas";
+            line-height: 1.2;
+            text-align: left;
+            white-space: pre-line;
+
+            br {
+                
+                content: "";
+                margin: 0;
+                display: block;
+                font-size: 24%;
+            }
+
+            #cmdCursor {
+                font-family: "Cooper Black";
+                line-height: 1.2;
+                text-align: right;
+                -moz-transform: matrix(1,0,0,1.95,0,-11);
+                -webkit-transform: matrix(1,0,0,1.95,0,-11);
+                -ms-transform: matrix(1,0,0,1.95,0,-11);
+                position: absolute;
+                
+            }
+            #cmdCursor::selection {
+                margin: 1em;
+                color: $cmdBlack;
+            }
+        }
+
+        #cmdIntroText {
+            margin: 0.1em 0 0.3em 0;
+        }
+    }
+}
+
+
+.cmdText::selection {
+    background: #fff; /* WebKit/Blink Browsers */
+    color: #000;
+  }
+  .cmdText::-moz-selection {
+    background: #fff; /* Gecko Browsers */
+    color: #000;
+  }
+
+
+.notHighlightable {
+    user-drag: none;
+    -webkit-user-drag: none;
+    
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.disablePointerEvents {
+    pointer-events: none;
+}

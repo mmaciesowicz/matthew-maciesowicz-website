@@ -1,0 +1,117 @@
+body {
+  background-color: #e5e5e5;
+  background-repeat: initial;
+  background-image: url(images/paintbrushBackground.png);
+  margin: 0;
+  overflow: hidden; }
+
+.cmdWindow {
+  justify-content: center;
+  width: 1061.5px;
+  height: 845.68px;
+  border-style: solid;
+  border-color: #7b7b7b;
+  border-width: 0.5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .cmdWindow .cmdNavbar {
+    width: 1061.5px;
+    height: 54.48px;
+    background-color: #ffffff;
+    position: relative; }
+    .cmdWindow .cmdNavbar #cmdLogo {
+      width: 33px;
+      height: 33px;
+      position: absolute;
+      top: 50%;
+      left: 0.8%;
+      margin-top: -16.5px; }
+    .cmdWindow .cmdNavbar .cmdTitle {
+      font-size: 14px;
+      font-family: "Segoe UI";
+      color: #000;
+      line-height: 1.2;
+      text-align: left;
+      -moz-transform: matrix(1.7258, 0, 0, 1.7258, 0, 0);
+      -webkit-transform: matrix(1.7258, 0, 0, 1.7258, 0, 0);
+      -ms-transform: matrix(1.7258, 0, 0, 1.7258, 0, 0); }
+    .cmdWindow .cmdNavbar .cmdTitleAlign {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 10.5%;
+      transform: translate(-50%, -50%); }
+    .cmdWindow .cmdNavbar .cmdWindowIconContainer {
+      position: relative;
+      float: right;
+      height: 100%;
+      aspect-ratio: 1/1;
+      text-align: center; }
+    .cmdWindow .cmdNavbar .cmdWindowIconContainer:hover {
+      background-color: #e5e5e5; }
+    .cmdWindow .cmdNavbar .cmdWindowIcons {
+      width: 30%;
+      margin: auto;
+      position: relative;
+      top: 35%; }
+  .cmdWindow .cmdTypeScreen {
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+    .cmdWindow .cmdTypeScreen p {
+      margin: -10px 0 -10px 0; }
+    .cmdWindow .cmdTypeScreen .cmdText {
+      margin-top: 1%;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: "Consolas";
+      line-height: 1.2;
+      text-align: left;
+      white-space: pre-line; }
+      .cmdWindow .cmdTypeScreen .cmdText br {
+        content: "";
+        margin: 0;
+        display: block;
+        font-size: 24%; }
+      .cmdWindow .cmdTypeScreen .cmdText #cmdCursor {
+        font-family: "Cooper Black";
+        line-height: 1.2;
+        text-align: right;
+        -moz-transform: matrix(1, 0, 0, 1.95, 0, -11);
+        -webkit-transform: matrix(1, 0, 0, 1.95, 0, -11);
+        -ms-transform: matrix(1, 0, 0, 1.95, 0, -11);
+        position: absolute; }
+      .cmdWindow .cmdTypeScreen .cmdText #cmdCursor::selection {
+        margin: 1em;
+        color: #0c0c0c; }
+    .cmdWindow .cmdTypeScreen #cmdIntroText {
+      margin: 0.1em 0 0.3em 0; }
+
+.cmdText::selection {
+  background: #fff;
+  /* WebKit/Blink Browsers */
+  color: #000; }
+
+.cmdText::-moz-selection {
+  background: #fff;
+  /* Gecko Browsers */
+  color: #000; }
+
+.notHighlightable {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.disablePointerEvents {
+  pointer-events: none; }
