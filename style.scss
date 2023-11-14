@@ -174,21 +174,33 @@ body {
 }
 
 section {
-    margin: 0;
+    background-color: #fff;
+    margin-top: 10%;
     padding: 0;
+    h1 {
+        font-family: "Consolas";
+        line-height: 1.2;
+        font-size: 40px;
+        margin-left: 5vh;
+        position: relative;
+        text-decoration:overline;
+
+    }
 }
 
 #home {
+    margin: 0;
+    background-color: #fff;
     height: 100vh;
     background-repeat: initial;
     background-image: url(images/paintbrushBackground.png);
 }
 
 #about {
-    background-color: #7b7b7b;
+    // background-color: #7b7b7b;
     // margin-top: 100%;
 }
 
 #projects {
-    background-color: #7b7b7b;
+    // background-color: #7b7b7b;
 }
