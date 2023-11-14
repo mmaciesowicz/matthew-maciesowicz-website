@@ -18,3 +18,22 @@ function cursorToggle() {
     }, 1000);    
 };
 cursorToggle();
+
+function updateCursor(event) {
+const mouseCursor = document.querySelector(".cursor");
+mouseCursor.style.left = event.x + scrollX + "px";
+mouseCursor.style.top = event.y + scrollY + "px";
+};
+
+document.addEventListener("mousemove", function (event) {
+    updateCursor(event);
+});
+document.addEventListener("scroll", function (event) {
+  updateCursor(event);
+});
+
+// document.addEventListener("scroll",function (event) {
+//     const mouseCursor = document.querySelector(".cursor");
+//     mouseCursor.style.top = scrollY + "px";
+//     console.log(scrollY);
+//     });
