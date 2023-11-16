@@ -25,41 +25,41 @@ body {
 }
 
 section {
-    // background-color: #fff;
-    margin-top: 10%;
+    // background-color: #fff
+    // margin-top: 10%;
     padding: 0;
 
-    h1 {
-        font-family: 'Open Sans', sans-serif;
-        line-height: 0.75;
-        font-size: 90px;
-        margin-left: 5vh;
-        position: absolute;
-        color: #656565;
-        font-weight: 800;
-        text-shadow:
-                1px 1px 1px #000,
-                -1px 1px 2px #000,
-                -1px -1px 0 #000,
-                1px -1px 0 #000;
+    // h1 {
+    //     font-family: 'Open Sans', sans-serif;
+    //     line-height: 0.75;
+    //     font-size: 90px;
+    //     margin-left: 5vh;
+    //     position: absolute;
+    //     color: #656565;
+    //     font-weight: 800;
+    //     text-shadow:
+    //             1px 1px 1px #000,
+    //             -1px 1px 2px #000,
+    //             -1px -1px 0 #000,
+    //             1px -1px 0 #000;
         
-    }
-    h2 {
-        font-family: 'Open Sans', sans-serif;
-        line-height: 1.2;
-        font-size: 40px;
-        margin-left: 5vh;
-        position: absolute;
-        padding-top: 7%;
-        padding-left: 3%;
-        color: #fff;
-        text-shadow:
-                1px 1px 1px #000,
-                -1px 1px 2px #000,
-                -1px -1px 0 #000,
-                1px -1px 0 #000;
+    // }
+    // h2 {
+    //     font-family: 'Open Sans', sans-serif;
+    //     line-height: 1.2;
+    //     font-size: 40px;
+    //     margin-left: 5vh;
+    //     position: absolute;
+    //     padding-top: 7%;
+    //     padding-left: 3%;
+    //     color: #fff;
+    //     text-shadow:
+    //             1px 1px 1px #000,
+    //             -1px 1px 2px #000,
+    //             -1px -1px 0 #000,
+    //             1px -1px 0 #000;
 
-    }
+    // }
 }
 
 .cursor {
@@ -83,8 +83,10 @@ section {
 .cmdWindow {
     justify-content: center;
     // background-color: $cmdBlack;
-    width: 1061.5px;
-    height: 845.68px;
+    // width: 1061.5px;
+    // height: 845.68px;
+    width:70%;
+    height:55.77%; 
     border-style: solid;
     border-color: $cmdGray;
     border-width: 0.5px;
@@ -242,6 +244,9 @@ section {
 
 #about {
     // display: flex;
+    margin: 0;
+    width: 100%;
+    height: 130vh;
 
     .container {
         position: absolute;
@@ -250,6 +255,11 @@ section {
         margin-top: 25%;
         margin-left: 47%;
     }
+    .small-title-container {
+        margin-top: -160px;
+    }
+        
+  
 
     p {
             font-family: 'Open Sans', sans-serif;
@@ -264,23 +274,107 @@ section {
         height: 10%;
     }
 
-    .smoke {
-        margin-top: -5%;
-        margin-left: -10%;
-        position: absolute;
-    }
+    
 
     #portrait1 {
         float: left;
+        z-index: 3;
     }
     #portrait2 {
+        // margin-top: -25vh;
         float: right;
+        z-index: -1;
     }
 }
 
+.header-container {
+    height: 10%;
+    width: 100%;
+    position: relative;
+    // background-color: aqua;
+    h1 {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 0.75;
+            font-size: 90px;
+            margin-left: 5vh;
+            // position: relative;
+            padding: 70px 0;
+            color: #656565;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-shadow:
+                1px 1px 1px #000,
+                -1px 1px 2px #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000;
+    
+        }
+    
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.2;
+            font-size: 40px;
+            margin-left: 5vh;
+            margin-bottom: 0;
+            position: absolute;
+            
+            padding-left: 3%;
+            color: #fff;
+            text-shadow:
+                1px 1px 1px #000,
+                -1px 1px 2px #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000;
+    
+        }
+}
 
+.smoke {
+    margin-top: -5%;
+    margin-left: -10%;
+    position: absolute;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+}
 
 #projects {
-    background-color: #7b7b7b;
-    margin-top: 80%;
+    // width: 100%;
+    height: 100vh;
+    // background-color: #7b7b7b;  
+    .small-title-container {
+        margin-top: -90px;
+    }
+
+    .img-container {
+        flex-grow: 2;
+        justify-content: right;
+    }
+    img {
+        width: 48%;
+    }
+
+    video {
+        width: 48%;
+    }
+    // video {
+    //         position: absolute;
+    //         min-width: 100%;
+    //         min-height: 100%;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //     }
+    
+   
 }
+
+// #skills {
+//     width: 100%;
+//     height: 100vh;
+// }
+
+
