@@ -34,7 +34,6 @@ section {
   left: 50%;
   transform: translate(-50%, -50%); }
   .cmdWindow .cmdNavbar {
-    width: 1061.5px;
     height: 54.48px;
     background-color: #ffffff;
     position: relative; }
@@ -58,7 +57,7 @@ section {
       margin: 0;
       position: absolute;
       top: 50%;
-      left: 10.5%;
+      left: 110px;
       transform: translate(-50%, -50%); }
     .cmdWindow .cmdNavbar .cmdWindowIconContainer {
       position: relative;

@@ -99,7 +99,6 @@ section {
     transform: translate(-50%, -50%);
     
     .cmdNavbar {
-        width: $cmdNavBarWidth;
         height: $cmdNavBarHeight;
         background-color: #ffffff;
         position: relative;
@@ -129,7 +128,7 @@ section {
             margin: 0;
             position: absolute;
             top: 50%;
-            left: 10.5%;
+            left: 110px;
             transform: translate(-50%, -50%);
         }
 
