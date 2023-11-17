@@ -232,3 +232,12 @@ section {
     width: 48%; }
   #projects video {
     width: 48%; }
+  #projects h3 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    font-size: 30px;
+    margin-left: 5vh;
+    margin-bottom: 0;
+    position: absolute;
+    padding-left: 3%;
+    color: #fff; }
