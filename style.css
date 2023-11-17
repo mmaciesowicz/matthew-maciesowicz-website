@@ -4,7 +4,8 @@ body {
   cursor: none; }
 
 section {
-  padding: 0; }
+  padding: 0;
+  height: max-content; }
 
 .cursor {
   position: absolute;
@@ -129,6 +130,9 @@ section {
 .disablePointerEvents {
   pointer-events: none; }
 
+.center {
+  justify-content: center; }
+
 #home {
   margin: 0;
   background-color: #fff;
@@ -138,30 +142,44 @@ section {
 
 #about {
   margin: 0;
-  width: 100%;
-  height: 130vh; }
+  width: 100%; }
+  #about img {
+    object-fit: contain; }
+  #about .about-container {
+    display: inline-block;
+    width: 100%; }
   #about .container {
-    position: absolute;
-    width: 48%;
     height: 100%;
-    margin-top: 25%;
-    margin-left: 47%; }
+    margin-left: 5%;
+    margin-right: 5%; }
   #about .small-title-container {
     margin-top: -160px; }
+  #about .portraits {
+    flex-grow: 2; }
+  #about .text-container {
+    width: 30%;
+    max-width: 100%;
+    flex-grow: 2;
+    justify-content: center;
+    margin-top: 80px; }
   #about p {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 400;
-    text-align: right;
+    text-align: left;
     color: #fff; }
   #about br {
     height: 10%; }
   #about #portrait1 {
+    max-height: 733px;
+    max-width: 542px;
     float: left;
     z-index: 3; }
   #about #portrait2 {
-    float: right;
-    z-index: -1; }
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    float: right; }
 
 .header-container {
   height: 10%;
@@ -192,10 +210,12 @@ section {
 .smoke {
   margin-top: -5%;
   margin-left: -10%;
-  position: absolute; }
+  position: absolute;
+  z-index: 10; }
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%; }
 
 #projects {
@@ -205,6 +225,9 @@ section {
   #projects .img-container {
     flex-grow: 2;
     justify-content: right; }
+  #projects #gis2 {
+    width: 100%;
+    opacity: 20%; }
   #projects img {
     width: 48%; }
   #projects video {
