@@ -85,7 +85,7 @@ section {
     .cmdWindow .cmdTypeScreen .cmdText {
       margin-top: 1%;
       color: #ffffff;
-      font-size: 20px;
+      font-size: 2.5vw;
       font-family: "Consolas";
       line-height: 1.2;
       text-align: left;
@@ -97,7 +97,7 @@ section {
         font-size: 24%; }
       .cmdWindow .cmdTypeScreen .cmdText #cmdCursor {
         font-family: "Cooper Black";
-        line-height: 1.2;
+        line-height: 1.4rem;
         text-align: right;
         -moz-transform: matrix(1, 0, 0, 1.95, 0, -11);
         -webkit-transform: matrix(1, 0, 0, 1.95, 0, -11);
