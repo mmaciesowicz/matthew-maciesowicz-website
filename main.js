@@ -78,6 +78,7 @@
         // direction == lef
         function deleteNextCharInDir(revDirection = 0) {
             const pTag = getNewestP();
+            const cmdCursorSpan = document.querySelector("#cmdCursor").outerHTML;
             if (typeof document.querySelector("#cmdCursor") != "undefined" && typeof document.querySelector("#cmdCursor") != "null") {
              
                 document.querySelector("#cmdCursor").remove();
@@ -101,8 +102,14 @@
         
         function watchKeyboardInput() {
             document.addEventListener("keydown", (element) => {
+
                 const key = element.key;
                 const pTag = getNewestP();
+                // Stop page from scrolling on space press
+                if (element.key === " " && element.target == document.body) {
+                  element.preventDefault();
+                  //writeTextToCmd(" ", true);
+                }
                 if (key === "Enter") {
                     const cdText = "\"cd about\" (go to about page)\n\"cd projects\" (go to projects page)";
                     if (getNewestP().innerHTML.includes("help")) {
@@ -114,23 +121,25 @@
                             document.getElementById('about').scrollIntoView({
                                 behavior: 'smooth'
                             });
+                            moveCursorToNewestP();
                         }
                         if (getNewestP().innerHTML.includes("cd projects")) {
                             document.getElementById('projects').scrollIntoView({
                                 behavior: 'smooth'
                             });
+                            moveCursorToNewestP();
                         }
-                        else {
-                            let text = pTag.innerText;
-                            text.trim();
-                            console.log(text);
-                            if (text == "C:\\Users\\Matthew>cd" || text == "C:\\Users\\Matthew>cd\n_") {
-                                createNewCmdEntry("Invalid arguments.");
-                            }
-                            else {
-                                createNewCmdEntry(`Invalid page section: \"${text.endsWith("_") ? (text.split('cd ').pop()).slice(0,-2) : text.split('cd ').pop()}\"`);
-                            }
-                        }
+                        // else {
+                        //     let text = pTag.innerText;
+                        //     text.trim();
+                        //     console.log(text);
+                        //     if (text == "C:\\Users\\Matthew>cd" || text == "C:\\Users\\Matthew>cd\n_") {
+                        //         createNewCmdEntry("Invalid arguments.");
+                        //     }
+                        //     else {
+                        //         createNewCmdEntry(`Invalid page section: \"${text.endsWith("_") ? (text.split('cd ').pop()).slice(0,-2) : text.split('cd ').pop()}\"`);
+                        //     }
+                        // }
                         
                         moveCursorToNewestP();
                     }
