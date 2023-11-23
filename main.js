@@ -123,23 +123,23 @@
                             });
                             moveCursorToNewestP();
                         }
-                        if (getNewestP().innerHTML.includes("cd projects")) {
+                        else if (getNewestP().innerHTML.includes("cd projects")) {
                             document.getElementById('projects').scrollIntoView({
                                 behavior: 'smooth'
                             });
                             moveCursorToNewestP();
                         }
-                        // else {
-                        //     let text = pTag.innerText;
-                        //     text.trim();
-                        //     console.log(text);
-                        //     if (text == "C:\\Users\\Matthew>cd" || text == "C:\\Users\\Matthew>cd\n_") {
-                        //         createNewCmdEntry("Invalid arguments.");
-                        //     }
-                        //     else {
-                        //         createNewCmdEntry(`Invalid page section: \"${text.endsWith("_") ? (text.split('cd ').pop()).slice(0,-2) : text.split('cd ').pop()}\"`);
-                        //     }
-                        // }
+                        else {
+                            let text = pTag.innerText;
+                            text.trim();
+                            console.log(text);
+                            if (text == "C:\\Users\\Matthew>cd" || text == "C:\\Users\\Matthew>cd\n_") {
+                                createNewCmdEntry("Invalid arguments.");
+                            }
+                            else {
+                                createNewCmdEntry(`Invalid page section: \"${text.endsWith("_") ? (text.split('cd ').pop()).slice(0,-2) : text.split('cd ').pop()}\"`);
+                            }
+                        }
                         
                         moveCursorToNewestP();
                     }
