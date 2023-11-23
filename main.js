@@ -113,7 +113,7 @@
                 if (key === "Enter") {
                     const cdText = "\"cd about\" (go to about page)\n\"cd projects\" (go to projects page)";
                     if (getNewestP().innerHTML.includes("help")) {
-                        createNewCmdEntry(`\n\nCommands:\ncd: To change page section:\nExamples:\n${cdText} \n\n`);
+                        createNewCmdEntry(`\nCommands:\ncd: To change page section:\nExamples:\n${cdText} \n\n`);
                         moveCursorToNewestP();
                     }
                     else if (getNewestP().innerHTML.includes("cd")) {
