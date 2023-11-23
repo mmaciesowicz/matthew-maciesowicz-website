@@ -89,7 +89,7 @@ section {
       font-family: "Consolas";
       line-height: 1.2;
       text-align: left;
-      white-space: pre-line; }
+      white-space: pre; }
       .cmdWindow .cmdTypeScreen .cmdText br {
         content: "";
         margin: 0;
